@@ -7,7 +7,7 @@ Authors //
   Brian Moore  
   
   
- Live site:  
+ Live site: https://bborumoore.github.io/weather-dashboard/   
  Repo site: https://github.com/bborumoore/weather-dashboard/  
  
  Screen cap:  
