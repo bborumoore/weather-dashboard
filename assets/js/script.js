@@ -19,7 +19,7 @@ function fetchGeoCode() {
     } else {
         modUserInput = userInput;
     }
-    fetch('http://api.openweathermap.org/geo/1.0/direct?q=' + modUserInput + '&limit=1&appid=65626f24a16fe5e221eefca20010c778', {
+    fetch('https://api.openweathermap.org/geo/1.0/direct?q=' + modUserInput + '&limit=1&appid=65626f24a16fe5e221eefca20010c778', {
         method: 'GET', //GET is the default.
         credentials: 'same-origin', // include, *same-origin, omit
         redirect: 'follow', // manual, *follow, error
@@ -67,7 +67,7 @@ function fetchWeatherInfo(lat, lon, name) {
         let icon = data.current.weather[0].icon;
         let iconImg = document.createElement('img');
         let cityName = name;
-        iconImg.setAttribute('src', "http://openweathermap.org/img/wn/"+icon+".png");
+        iconImg.setAttribute('src', "https://openweathermap.org/img/wn/"+icon+".png");
         iconImg.setAttribute('alt', "weather icon");
         let dayTemp = data.current.temp;
         let dayHumidity = data.current.humidity;
@@ -97,7 +97,7 @@ function fetchWeatherInfo(lat, lon, name) {
         for(i=0; i < 5; i++) {
             let forecastIcon = data.daily[i].weather[0].icon;
             let forecastIconImg = document.createElement('img');
-            forecastIconImg.setAttribute('src', "http://openweathermap.org/img/wn/"+forecastIcon+"@2x.png")
+            forecastIconImg.setAttribute('src', "https://openweathermap.org/img/wn/"+forecastIcon+"@2x.png")
             forecastIconImg.setAttribute('alt', "weather icon");
             let forecastMaxTemp = data.daily[i].temp.max;
             let forecastMinTemp = data.daily[i].temp.min;
