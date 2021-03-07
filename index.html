@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="favicon" href="assets/images/weatherFavIcon.png"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+      <header class="bg-dark text-white py-2 col-12 d-flex justify-content-center">
+          <h1>Weather Dashboard</h1>
+      </header>
+
+      <main>
+          <div class="row container">
+            <!-- container for the sidebar -->
+            <div class="bg-light col-md-4 col-12">
+                <form id="search-container">
+                    <div class="mb-3 row">
+                      <label for="userInput" class="form-label">Search</label>
+                      <input type="text" class="form-control col-10 col-md-6" id="user-input" aria-describedby="searchHelp">
+                      <button type="submit" class="btn btn-primary col-2" id="search-btn">🔍</button>
+                      <div id="textHelp" class="form-text">City or City, ST</div>
+                    </div>
+                </form>
+
+                <ul class="row overflow-y: scroll" id="search-list">
+
+                </ul>
+            </div>
+
+            <!-- container for the search results -->
+            <div class="col-md-8 col-12 py-3" id="search-results">
+                <!-- container for the current day -->
+                <div class="row col-12 col-md-8 py-2" id="current-day">
+                    
+                </div>
+
+                <!-- container for the forecast cards -->
+                <div class="row col-12 col-md-10 py-3" id="forecast-holder">
+                  <div class="d-flex justify-content-between" id="card-holder">
+
+                  </div>                                   
+                </div>
+
+            </div>
+        </div>
+        
+      </main>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+  </body>
+</html>
